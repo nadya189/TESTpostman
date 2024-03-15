@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "931c9e4c-d47d-40b0-a6bf-12ae359629de",
+		"name": "Линия Здоровья",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19383930"
+	},
+	"item": [
+		{
+			"name": "GetToken/",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\"apiKey\": \"LgNcu5mvM0O9LKHzjyHI\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https:url/api/interfarmax/GetToken/",
+					"protocol": "https",
+					"host": [
+						"hp",
+						"dev",
+						"newsite",
+						"by"
+					],
+					"path": [
+						"api",
+						"interfarmax",
+						"GetToken",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/GetPersonalData/",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "/GetPersonalData/ cardHolderID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlLZXkiOiJMZ05jdTVtdk0wTzlMS0h6anlISSJ9.bJuIrA_Ci3VDh6SbUZRCXH3laJsRRh2Xuus4IVppdxc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cardHolderID\":\"62FDC17D-72D9-2679-7A7F-2D0BCD504DAC\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://url/api/interfarmax/GetPersonalData/",
+					"protocol": "https",
+					"host": [
+						"hp",
+						"dev",
+						"newsite",
+						"by"
+					],
+					"path": [
+						"api",
+						"interfarmax",
+						"GetPersonalData",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ClearPersonalData/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlLZXkiOiJMZ05jdTVtdk0wTzlMS0h6anlISSJ9.bJuIrA_Ci3VDh6SbUZRCXH3laJsRRh2Xuus4IVppdxc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cardHolderID\":\"1716F104-B8E1-04E7-8A31-7D554FA2ECA4\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://url/api/interfarmax/ClearPersonalData/",
+					"protocol": "https",
+					"host": [
+						"hp",
+						"dev",
+						"newsite",
+						"by"
+					],
+					"path": [
+						"api",
+						"interfarmax",
+						"ClearPersonalData",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendSMS",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlLZXkiOiJMZ05jdTVtdk0wTzlMS0h6anlISSJ9.bJuIrA_Ci3VDh6SbUZRCXH3laJsRRh2Xuus4IVppdxc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cardHolderID\":\"150F6FA2-6E66-2586-855D-1FBC671BC962\",\r\n\"Body\": \"Text sms\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://url/api/interfarmax/SendSMS/",
+					"protocol": "https",
+					"host": [
+						"hp",
+						"dev",
+						"newsite",
+						"by"
+					],
+					"path": [
+						"api",
+						"interfarmax",
+						"SendSMS",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
